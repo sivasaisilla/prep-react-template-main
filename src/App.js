@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import logo from "./mlh-prep.png";
+import Header from "./header.js";
+import Footer from "./footer.js";
 
 function App() {
   const [error, setError] = useState(null);
@@ -38,20 +40,7 @@ function App() {
   } else {
     return (
       <>
-        <header className="header">
-          <h1 className="heading-main">Weather Application</h1>
-          <nav className="btn-items">
-            <a href="#root" className="btn">
-              Home
-            </a>
-            <a href="#root" className="btn">
-              Login
-            </a>
-            <a href="#root" className="btn">
-              Get Status
-            </a>
-          </nav>
-        </header>
+        <Header name={"Sivasai"}></Header>
         <img className="logo" src={logo} alt="MLH Prep Logo"></img>
         <div>
           <h2>Enter a city below 👇</h2>
@@ -76,34 +65,8 @@ function App() {
             )}
           </div>
         </div>
-        <footer className="footer">
-          <nav className="footer-items">
-            <a href="#root" className="foot-item">
-              About us
-            </a>
-            <a href="#rot" className="foot-item">
-              Contact us
-            </a>
-            <a href="#root" className="foot-item">
-              Privacy
-            </a>
-            <a href="#root" className="foot-item">
-              Terms & Conditions
-            </a>
-          </nav>
 
-          <h2 className="footer-heading">
-            Made with ❤️ by <span> Sivasai</span>
-            <a
-              href="https://github.com/sivasaisilla"
-              className="btn btn-foot"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-            </a>
-          </h2>
-        </footer>
+        <Footer />
       </>
     );
   }

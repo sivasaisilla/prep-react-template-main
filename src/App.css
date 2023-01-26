@@ -81,7 +81,9 @@ input {
   justify-content: space-around;
   margin-top: 9.6rem;
   background-color: #1a4a8f;
-  padding: 3.2rem;
+  padding: 1.8rem;
+  margin-top: 3.2rem;
+  border-top: 2px solid #333;
 }
 
 .footer-heading span {
